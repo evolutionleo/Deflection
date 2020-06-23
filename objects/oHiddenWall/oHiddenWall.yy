@@ -1,0 +1,48 @@
+{
+  "spriteId": {
+    "name": "sHiddenWall",
+    "path": "sprites/sHiddenWall/sHiddenWall.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "oPowerable",
+    "path": "objects/oPowerable/oPowerable.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oHiddenWall","path":"objects/oHiddenWall/oHiddenWall.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"parent":{"name":"oHiddenWall","path":"objects/oHiddenWall/oHiddenWall.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oHiddenWall","path":"objects/oHiddenWall/oHiddenWall.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"parent":{"name":"oHiddenWall","path":"objects/oHiddenWall/oHiddenWall.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [
+    {"varType":6,"value":"\"Bullet\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
+        "\"Bullet\"",
+        "\"Player\"",
+        "\"Power\"",
+      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"activation","tags":[],"resourceType":"GMObjectProperty",},
+  ],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Level Elements",
+    "path": "folders/Objects/Level Elements.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "oHiddenWall",
+  "tags": [],
+  "resourceType": "GMObject",
+}
