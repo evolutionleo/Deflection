@@ -1,3 +1,6 @@
+// Idea: child class CleanArray(), with all methods not affecting the original array
+
+
 ///@function	Array(*item1, *item2, ...)
 ///@description	Constructor function for Array objects
 ///@param		{any} *item
@@ -134,7 +137,7 @@ function Array() constructor {
 	///@description	Loops through the array and passes each value into a function.
 	///				Returns a new array with only values, that returned true.
 	///				Function func gets (x, *pos) as input
-	///				Note: Does not affect the original array!
+	///				Note: Clean function. Does not affect the original array!
 	///@param		{function} func
 	Filter = function(_func) {
 		func = _func;

@@ -6,6 +6,7 @@ pos = new Vector2(x, y)
 
 spd = new Vector2(0, 0)
 prev_spd = new Vector2(0, 0)
+fraction = new Vector2(0, 0)
 
 velo = new Vector2(0, 0)
 
@@ -16,13 +17,24 @@ grv = new Vector2(xgrv, ygrv)
 #region Functions
 
 pointGround = function(_x, _y) {
-	static tilemap1 = layer_tilemap_get_id(layer_get_id("Wall"))
-	var tile1 = tilemap_get_at_pixel(tilemap1, _x, _y)
+	//static tilemap1 = layer_tilemap_get_id(layer_get_id("Wall"))
+	//var tile1 = tilemap_get_at_pixel(tilemap1, _x, _y)
 	
-	static tilemap2 = layer_tilemap_get_id(layer_get_id("HiddenWall"))
-	var tile2 = tilemap_get_at_pixel(tilemap2, _x, _y)
+	//static tilemap2 = layer_tilemap_get_id(layer_get_id("HiddenWall"))
+	//var tile2 = tilemap_get_at_pixel(tilemap2, _x, _y)
 	
-	return sign(tile1) or sign(tile2)
+	//return sign(tile1) or sign(tile2)
+	
+	var tilemap = layer_tilemap_get_id(layer_get_id("Tiles"))
+	var tile = tilemap_get_at_pixel(tilemap, _x, _y)
+	
+	var grid = global.collision_map.Get(tile)
+	
+	var xx = _x % 16
+	var yy = _y % 16
+	
+	
+	return grid[xx][yy]
 }
 
 ///@function meetingGround(x, y)
@@ -51,6 +63,11 @@ meetingGround = function(_x, _y) {
 ///@description Corrects position to not collide with anything
 collision = function() {
 	var colliding = false
+
+	fraction.x = spd.x - (floor(abs(spd.x)) * sign(spd.x))
+	fraction.y = spd.y - (floor(abs(spd.y)) * sign(spd.y))
+
+	spd.Subtract(fraction)
 	
 	if meetingGround(pos.x + spd.x + sign(spd.x), pos.y)
 	{
@@ -59,13 +76,11 @@ collision = function() {
 			pos.x += sign(spd.x)
 		}
 		prev_spd.x = spd.x - grv.x
-		setTimeout(method(self, function() {
-			prev_spd.x = spd.x
-		}), 1, {})
 		
 		colliding = true
 		spd.x = 0
 		velo.x = 0
+		fraction.x = 0
 	}
 	pos.x += spd.x
 	
@@ -76,14 +91,17 @@ collision = function() {
 			pos.y += sign(spd.y)
 		}
 		prev_spd.y = spd.y - grv.y
-		//setTimeout(function() { prev_spd.y = spd.y}, 1)
 		
 		colliding = true
 		spd.y = 0
 		velo.y = 0
+		fraction.y = 0
 	}
 	pos.y += spd.y
 	
+	
+	
+	spd.Add(fraction)
 	
 	if colliding
 		onCollision()

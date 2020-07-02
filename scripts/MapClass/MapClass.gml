@@ -26,14 +26,22 @@ function Map() constructor {
 			var name = names[i]
 			var value = variable_struct_get(self.content, name)
 			
+			// Actually sorry for that. Order is value -> kay -> pos. I know that's weird
 			func(value, name, i)
 		}
+	}
+	
+	Exists = function(key) {
+		return variable_struct_exists(self.content, key)
 	}
 }
 
 
-function struct_toMap(struct) {
-	return new Map(struct)
+function to_Map(struct) {
+	if is_struct(struct)
+		return new Map(struct)
+	else
+		throw "TypeError: function to_Map(). Expected struct, got "+string(typeof(struct))
 }
 
 
@@ -42,8 +50,24 @@ function struct_toMap(struct) {
 ///				Why not? Retyping the same thing is boring
 ///@param		{real} map
 ///@param		{function} func
-function ds_map_foreach(map, func) {
-	for(var k = ds_map_find_first(map); !is_undefined(k); k = ds_map_find_next(map, k)) {
-		func(map[? k], k)
-	}
-}
+//function ds_map_foreach(map, func) {
+//	for(var k = ds_map_find_first(map); !is_undefined(k); k = ds_map_find_next(map, k)) {
+//		func(map[? k], k)
+//	}
+//}
+
+
+///@function struct_equal(struct1, struct2)
+//function struct_equal(str1, str2) {
+//	str1 = new Map(str1)
+//	str2 = new Map(str2)
+	
+//	_ans = true
+	
+//	str1.ForEach(function(val, key) {
+//		if typeof(val) != typeof(str2.Get(key)) {
+//			_ans = false
+//		}
+//		if str2.Get(key) == str1
+//	})
+//}

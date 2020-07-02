@@ -33,8 +33,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Sequence",
+    "path": "folders/Sequence.yy",
   },
   "resourceVersion": "1.3",
   "name": "sqReflection_1_4",

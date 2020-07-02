@@ -26,14 +26,13 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oBullet_spawner","path":"objects/oBullet_spawner/oBullet_spawner.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"parent":{"name":"oBullet_spawner","path":"objects/oBullet_spawner/oBullet_spawner.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":76,"eventType":7,"collisionObjectId":null,"parent":{"name":"oBullet_spawner","path":"objects/oBullet_spawner/oBullet_spawner.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oBullet_spawner","path":"objects/oBullet_spawner/oBullet_spawner.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oBullet_spawner","path":"objects/oBullet_spawner/oBullet_spawner.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"lock_on","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"dir","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":6,"value":"oBouncyBullet","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
+    {"varType":6,"value":"oBullet","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
         "oBullet",
         "oBouncyBullet",
         "oGhostBullet",

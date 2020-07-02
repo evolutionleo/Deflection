@@ -62,8 +62,8 @@
   },
   "eventStubScript": null,
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Sequence",
+    "path": "folders/Sequence.yy",
   },
   "resourceVersion": "1.3",
   "name": "sqDash",

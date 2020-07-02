@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"movement_pattern","path":"objects/oEnemy/oEnemy.yy",},"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"value":"\"HorizontalCycle\"","resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"max_xspd","path":"objects/oEnemy/oEnemy.yy",},"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"value":".6","resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"max_xspd","path":"objects/oEnemy/oEnemy.yy",},"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"value":"1","resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"max_hp","path":"objects/oEnemy/oEnemy.yy",},"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"value":"1","resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"damage","path":"objects/oEnemy/oEnemy.yy",},"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"value":"0.5","resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"sp","path":"objects/oEnemy/oEnemy.yy",},"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"value":".02","resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMOverriddenProperty",},

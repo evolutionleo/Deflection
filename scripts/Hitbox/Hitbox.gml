@@ -5,6 +5,7 @@ _dependencies = [
 // Functional style
 
 function hb_add(name, sprite) {
+	
 	if ( !variable_instance_exists(self, "hitboxes") ) { self.hitboxes = new Map() }
 	
 	

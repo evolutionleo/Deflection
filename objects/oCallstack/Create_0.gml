@@ -1,0 +1,3 @@
+/// @desc
+
+callstack = new Array()

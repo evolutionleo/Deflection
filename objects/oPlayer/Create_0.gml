@@ -4,6 +4,7 @@
 #region Basic setup
 event_inherited()
 
+//fraction = new Vector2(0, 0)
 acc = new Vector2(.3, 0)
 
 #endregion
@@ -118,7 +119,7 @@ func = function() {
 	blinking = buffer.iframes ? !blinking : false
 }
 
-setInterval(method(self,func), 15, {bind: oPlayer})
+//////setInterval(self, func, 15)
 
 ///@function is_invinsivle()
 isInvincible = function() {

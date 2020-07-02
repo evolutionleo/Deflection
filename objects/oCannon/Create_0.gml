@@ -1,5 +1,5 @@
 /// @desc
-int = setInterval(method(self, function() {
+int = setInterval(self, function() {
 	
 	image_angle = dir
 	
@@ -12,7 +12,7 @@ int = setInterval(method(self, function() {
 	var vx2 = vx1 + camera_get_view_width(view_camera[0])
 	var vy2 = vy1 + camera_get_view_height(view_camera[0])
 	
-	if(x > vx1 and x < vx1 and y > vy1 and y < vy2) {
+	if(x > vx1 and x < vx2 and y > vy1 and y < vy2) {
 		audio_play_sound(aShoot, 1, 0)
 	}
 	
@@ -34,4 +34,4 @@ int = setInterval(method(self, function() {
 	})
 	props = props.content
 	
-}), rate, {})
+}, rate)
