@@ -1,31 +1,42 @@
-/// @desc
 
-callstack.Lambda(function(call, pos) {
-	if call.time <= 0
+todelete.Clear()
+
+callstack.ForEach(function(_call, _pos) {
+	try {
+	//var inst, func, time, props
+	call = _call
+	pos = _pos
+	
+	inst = call._inst
+	func = call._func
+	time = call._time
+	props = call._props
+	
+	if (time <= 0)
 	{
-		//show_debug_message("calling: "+string(call))
-		with(call.inst)
-		{
-			call.func(call.props)
-		}
+		if inst == noone
+			inst = id
 		
-		if (call.props.cycle)
-		{
-			call.time = call.max_time
-		}
+		with(inst) { other.func(other.props) }
+		
+		if !call._props.cycle
+			todelete.Append(call._id)
+		else
+			call._time = call._max_time
 	}
 	
-	call.time--
+	call._time -= 1
 	
-	return call
+	callstack.Set(pos, call)
+	} catch(e) {}
 })
 
-
-
 callstack = callstack.Filter(function(call) {
-	
-	if (call.time <= 0 and !call.props.cycle)
+	try {
+		
+	if todelete.Exists(call._id)
 		return 0
 	else
 		return 1
+	} catch(e) { }
 })

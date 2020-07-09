@@ -1,0 +1,13 @@
+Attacks:
+
+\/ Phase 1 - Normal
+  1) \/ The boss shoots laser into the player
+  2) \/ The boss shoots 3 waves of slow bullets in all directions
+  3) \/ The boss shoots a "shotgun" wave of bullets into the player.
+     The bullets are fast, but can be parried
+Phase 2 - Enraged
+  1) \/ The boss shoots laser into the player, then it slowly rotates to follow him
+  2) \/ The boss shoots 6 waves of fast bullets in all directions
+  3) \/ The boss shoots 6 super-fast bullets in a row 
+Phase 3 - Fan
+  1) The boss is constantly rotating and shooting bullets in 4 directions.

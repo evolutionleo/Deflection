@@ -1,7 +1,6 @@
 {
   "bboxMode": 0,
   "collisionKind": 1,
-  "separateMasks": false,
   "type": 0,
   "origin": 9,
   "preMultiplyAlpha": false,
@@ -69,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9cb73c93-9f3d-4853-b5ab-edb7ee899131","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Level elements",
-    "path": "folders/Sprites/Level elements/Level elements.yy",
+    "name": "In-level",
+    "path": "folders/Sprites/Level elements/In-level.yy",
   },
   "resourceVersion": "1.0",
   "name": "sCannon",

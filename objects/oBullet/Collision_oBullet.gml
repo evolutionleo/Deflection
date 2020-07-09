@@ -1,6 +1,7 @@
 /// @desc
-if hb_meeting(atk, other.atk)
+
+if !ghost and hb_meeting(atk, other.atk)
 {
-	//instance_destroy(other)
-	instance_destroy()
+	if !other.ghost
+		instance_destroy(other)
 }

@@ -1,4 +1,4 @@
 /// @desc
 callstack = callstack.Filter(function(call) {
-	return call.props.pers
+	return call._props.pers
 })

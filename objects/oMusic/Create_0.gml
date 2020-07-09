@@ -1,2 +1,3 @@
 /// @desc
-audio_play_sound(aMusic, 0, 1)
+global.mute = false
+audio_play_sound_mute(aMusic, 10000, 1)

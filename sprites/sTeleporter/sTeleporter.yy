@@ -1,7 +1,6 @@
 {
   "bboxMode": 0,
   "collisionKind": 1,
-  "separateMasks": false,
   "type": 0,
   "origin": 9,
   "preMultiplyAlpha": false,
@@ -69,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1dd72943-1fbb-4274-bcde-d9ca59c3cdea","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Level elements",
-    "path": "folders/Sprites/Level elements/Level elements.yy",
+    "name": "In-level",
+    "path": "folders/Sprites/Level elements/In-level.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTeleporter",

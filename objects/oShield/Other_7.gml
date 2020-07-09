@@ -1,9 +1,11 @@
-/// @desc
+/// @desc [De]Activation
 
-switch(state) {
+switch(state)
+{
 	case Activating:
 		state = Active
-		active_time = 0
+		active_time = max_active_time
+		cooldown = max_cooldown
 		
 		break
 	case Deactivating:

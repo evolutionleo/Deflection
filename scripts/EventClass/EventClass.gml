@@ -13,12 +13,17 @@ function Event() constructor {
 	
 	///@function Fire()
 	///@desc	 Fires the event
-	Fire = function() {
+	///@arg		 {any} *event_data
+	Fire = function(ev_data) {
+		if is_undefined(ev_data)
+			ev_data = {}
+		self.ev_data = ev_data
+		
 		listeners.ForEach(function(entry) {
 			var listener = entry.listener
 			var func = entry.callback
 			with(listener) {
-				func()
+				func(other.ev_data)
 			}
 		})
 		//self.Destroy()

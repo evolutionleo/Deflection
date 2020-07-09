@@ -1,7 +1,8 @@
 /// @desc
 #region Counterlag
-ot = 1000000/60
-counterlag = delta_time/ot
+//ot = 1000000/60
+//counterlag = delta_time/ot
+counterlag = 1
 #endregion
 #region Rotation
 
@@ -45,9 +46,9 @@ switch(rotation_mode) {
 
 #endregion
 
-velo.Add(grv)
-
+spd.Add(grv.Multiplied(toVector2(counterlag)))
 spd.Add(velo.Multiplied(toVector2(counterlag)))
+
 
 spd.Clamp(min_spd, max_spd)
 

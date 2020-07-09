@@ -1,7 +1,6 @@
 {
   "bboxMode": 0,
   "collisionKind": 1,
-  "separateMasks": false,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -105,8 +104,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b432bc18-a519-4ce2-a1b3-fc51a001e330","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "1 bit",
-    "path": "folders/Sprites/1 bit.yy",
+    "name": "Kenney",
+    "path": "folders/Sprites/Kenney.yy",
   },
   "resourceVersion": "1.0",
   "name": "sFood",

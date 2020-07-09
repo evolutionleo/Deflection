@@ -2,11 +2,51 @@
 
 
 ///@function	Array(*item1, *item2, ...)
-///@description	Constructor function for Array objects
+///@description	Constructor funcion for Array objects
 ///@param		{any} *item
 function Array() constructor {
 	content = [];
 	Size = 0;
+	
+	#macro ERROR_HANDLER_CONSOLE 0
+	#macro ERROR_HANDLER_MESSAGE 1
+	#macro ERROR_HANDLER_ERROR 2
+	#macro ERROR_HANDLER_CUSTOM 3
+	
+	
+	///@function SetHandler(handler_type, *custom_handler)
+	///@desc	 Changes error handling mode (in case you don't want to crash the game)
+	///@param	 {real} handler_type
+	///@param	 {function} custom_handler
+	SetHandler = function(handler_type, custom_handler) {
+		switch(handler_type)
+		{
+			case ERROR_HANDLER_CONSOLE:
+				handler = function(err) {
+					show_debug_message(err);
+					return 0;
+				}
+				break
+			case ERROR_HANDLER_ERROR:
+				handler = function(err) {
+					show_error(err, true);
+					return 0;
+				}
+				break
+			case ERROR_HANDLER_MESSAGE:
+				handler = function(err) {
+					show_message(err);
+					return 0;
+				}
+				break
+			case ERROR_HANDLER_CUSTOM:
+				handler = custom_handler;
+				break;
+		}
+		
+		exception_unhandled_handler(handler);
+	}
+	
 	
 	///@function	Append(value)
 	///@description	Adds a value to the end of the array
@@ -24,6 +64,7 @@ function Array() constructor {
 	Concat = function(_other) {
 		if(!is_Array(_other)) {
 			throw "TypeError: trying to concat "+typeof(_other)+" with Array";
+			return self;
 		}
 		
 		for(var i = 0; i < _other.Size; i++) {
@@ -61,9 +102,12 @@ function Array() constructor {
 		
 		if(Size == 0) {
 			throw "Error: trying to delete value from an empty Array";
+			return self;
+			
 		}
 		else if(pos < 0 or pos > Size - 1) {
 			throw "Error: index "+string(pos)+" is out of range [0, "+string(Size-1)+"]";
+			return self;
 		}
 		
 		var part1 = self.Slice(0, pos);
@@ -88,6 +132,7 @@ function Array() constructor {
 	Equal = function(_other) {
 		if(!is_Array(_other)) {
 			throw "TypeError: trying to compare "+typeof(_other)+" with Array";
+			return false;
 		}
 		
 		if(self.Size != _other.Size)
@@ -152,7 +197,7 @@ function Array() constructor {
 		//return self;
 		return ans;
 	}
-		
+	
 	///@function	Find(value)
 	///@description	Finds a value and returns its position. -1 if not found
 	///@param		{any} value
@@ -216,9 +261,11 @@ function Array() constructor {
 		
 		if(Size == 0) {
 			throw "Error: trying to achieve value from empty Array";
+			return undefined;
 		}
 		else if(pos < 0 or pos > Size-1) {
 			throw "Error: index "+string(pos)+" is out of range [0, "+string(Size-1)+"]";
+			return undefined;
 		}
 		
 		
@@ -234,7 +281,8 @@ function Array() constructor {
 			pos += Size;
 		
 		if(pos < 0 or (pos > Size-1 and Size != 0)) {
-			throw "Error: trying to insert a value outside of the array. Use Array.Set() or Array.Append() instead";
+			show_debug_message("Warning: trying to insert a value outside of the array. Use Array.Set() or Array.Append() instead");
+			return self.Set(pos, value);
 		}
 		
 		var part1 = self.Slice(0, pos);
@@ -272,8 +320,11 @@ function Array() constructor {
 		ans = self.Get(0);
 		
 		self.ForEach(function(x) {
-			if(!is_numeric(x))
+			if(!is_numeric(x)) {
 				throw "TypeError: Trying to calculate maximum of "+typeof(x)+"";
+				ans = undefined;
+				return 1 // Break out of ForEach()
+			}
 			
 			if(x > ans)
 				ans = x;
@@ -288,8 +339,11 @@ function Array() constructor {
 		ans = self.content[0];
 		
 		self.ForEach(function(x) {
-			if(!is_numeric(x))
+			if(!is_numeric(x)) {
 				throw "TypeError: Trying to calculate minimum of "+typeof(x)+"";
+				ans = undefined;
+				return 1
+			}
 			
 			if(x < ans)
 				ans = x;
@@ -300,6 +354,8 @@ function Array() constructor {
 	
 	///@function	Number(value)
 	///@description	Returns the amount of elements equal to given value in the array
+	///@note		IMPORTANT! Don't try to use this with data structures, as results may be unpredictable
+	///				(Use ForEach() with your own logic instead)
 	///@param		{any} value
 	Number = function(_val) {
 		val = _val;
@@ -317,8 +373,10 @@ function Array() constructor {
 	///@description	Deletes a value from the end of the array and returns it
 	Pop = function() {
 		ans = self.Last();
-		if(self.Empty())
+		if(self.Empty()) {
 			throw "Error: trying to pop value from empty Array";
+			return undefined;
+		}
 		
 		self.Delete(-1);
 		
@@ -345,8 +403,10 @@ function Array() constructor {
 	///@description	Resizes the array. Sizing up leads to filling the empty spots with zeros
 	///@param		{real} size
 	Resize = function(size) {
-		if(size < 0)
+		if(size < 0) {
 			throw "Error: array size cannot be negative";
+			return self;
+		}
 		
 		while(self.Size < size) {
 			self.Append(0);
@@ -441,8 +501,10 @@ function Array() constructor {
 			_end = self.Size;
 		
 		
-		if(!is_numeric(_begin) or round(_begin) != _begin or !is_numeric(_end) or round(_end) != _end)
+		if(!is_numeric(_begin) or round(_begin) != _begin or !is_numeric(_end) or round(_end) != _end) {
 			throw "TypeError: sort boundaries must be integers";
+			return self;
+		}
 		
 		for(var i = _begin; i < _end; i++) {	// Bubble sort LUL
 			for(var j = i; j > _begin; j--) {
@@ -463,8 +525,10 @@ function Array() constructor {
 			ans = "";
 		else if(is_numeric(self.Get(0)))
 			ans = 0;
-		else
+		else {
 			throw "TypeError: trying to summ up elements, that aren't strings or reals";
+			return undefined;
+		}
 		
 		self.ForEach(function(el) {
 			if(typeof(el) != typeof(ans))
@@ -502,10 +566,8 @@ function Array() constructor {
 	}
 
 	
-	// Initialization
-	for(var i = 0; i < argument_count; i++) {
-		self.Append(argument[i]);
-	}
+	for(var i = 0; i < argument_count; i++)
+		self.Append(argument[i])
 	
 	
 	toString = function() {
@@ -527,8 +589,10 @@ function Array() constructor {
 ///@description	Returns an instance of Array object with all the contents of an array
 ///@param		{array}	array
 function array_to_Array(array) {
-	if(!is_array(array))
+	if(!is_array(array)) {
 		throw "TypeError: expected array, got "+typeof(array);
+		return undefined;
+	}
 	
 	ans = new Array();
 	
@@ -543,8 +607,10 @@ function array_to_Array(array) {
 ///@description	Returns an instance of Array object with all the contents of an array
 ///@param		{real} list
 function ds_list_to_Array(list) {
-	if(!ds_exists(list, ds_type_list))
+	if(!ds_exists(list, ds_type_list)) {
 		throw "Error: ds_list with given index does not exist";
+		return undefined;
+	}
 	
 	ans = new Array();
 	
@@ -566,8 +632,10 @@ function is_Array(Arr) {
 ///@description	Returns contents of an Array object in format of regular array
 ///@param		{Array} Arr
 function Array_to_array(Arr) {
-	if !is_Array(Arr)
+	if !is_Array(Arr) {
 		throw "Error in function Array_to_array(): expected Array(), got "+typeof(Arr)
+		return undefined;
+	}
 	return Arr.content
 }
 
@@ -575,8 +643,10 @@ function Array_to_array(Arr) {
 ///@description	Returns contents of an Array object in format of ds_list
 ///@param		{Array} Arr
 function ds_list_from_Array(Arr) {
-	if !is_Array(Arr)
+	if !is_Array(Arr) {
 		throw "Error in function ds_list_from_Array(): expected Array(), got "+typeof(Arr)
+		return undefined;
+	}
 	
 	var list = ds_list_create()
 	Arr.ForEach(function(item) {

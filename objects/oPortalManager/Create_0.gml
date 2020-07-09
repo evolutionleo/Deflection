@@ -1,4 +1,7 @@
 /// @desc
+
+//setTimeout(self, function() {
+
 global.portals = new Array()
 
 with(oTeleporter)
@@ -7,8 +10,7 @@ with(oTeleporter)
 		exit
 	
 	var tp = self
-	//show_message(self)
-	//show_message(self.portal_id)
 	global.portals.Set(tp.portal_id, tp)
-	//global.portals.Set(other.tp.portal_id, other.tp)
 }
+
+//}, 1)

@@ -1,0 +1,43 @@
+{
+  "spriteId": {
+    "name": "sSpikeProjectile",
+    "path": "sprites/sSpikeProjectile/sSpikeProjectile.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "oBullet",
+    "path": "objects/oBullet/oBullet.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oFlyingSpike","path":"objects/oFlyingSpike/oFlyingSpike.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"parent":{"name":"oFlyingSpike","path":"objects/oFlyingSpike/oFlyingSpike.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"ygrv","path":"objects/oPhysics_object/oPhysics_object.yy",},"objectId":{"name":"oPhysics_object","path":"objects/oPhysics_object/oPhysics_object.yy",},"value":".4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"sp","path":"objects/oBullet/oBullet.yy",},"objectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "Entities",
+    "path": "folders/Objects/Entities.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "oFlyingSpike",
+  "tags": [],
+  "resourceType": "GMObject",
+}

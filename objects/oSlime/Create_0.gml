@@ -4,8 +4,8 @@
 event_inherited()
 
 
-atk = hb_add("attack", hSlime_atk)
-def = hb_add("defence", hSlime_def)
+atk = hb_add(id,"attack", hSlime_atk)
+def = hb_add(id,"defence", hSlime_def)
 
 iframes = 0
 max_iframes = 3

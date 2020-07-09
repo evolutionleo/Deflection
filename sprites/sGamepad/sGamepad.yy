@@ -1,0 +1,158 @@
+{
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 0,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 0,
+  "bbox_right": 27,
+  "bbox_top": 0,
+  "bbox_bottom": 27,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 32,
+  "height": 32,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"c1d75498-d0d3-45a5-bb7b-238983d8e456","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c1d75498-d0d3-45a5-bb7b-238983d8e456","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"c1d75498-d0d3-45a5-bb7b-238983d8e456","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6731847d-ba27-44fc-a080-c25e92d240dd","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6731847d-ba27-44fc-a080-c25e92d240dd","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"6731847d-ba27-44fc-a080-c25e92d240dd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0cf39296-d700-40b3-b18c-b206eaf287db","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0cf39296-d700-40b3-b18c-b206eaf287db","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"0cf39296-d700-40b3-b18c-b206eaf287db","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a932d867-6c4b-4636-9773-4a3cf8d491ab","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a932d867-6c4b-4636-9773-4a3cf8d491ab","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"a932d867-6c4b-4636-9773-4a3cf8d491ab","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2b91a11c-29f5-4655-998f-0babf46d0240","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2b91a11c-29f5-4655-998f-0babf46d0240","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"2b91a11c-29f5-4655-998f-0babf46d0240","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0a5c1cbc-6212-4e1c-95f1-02f9769ec1b6","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0a5c1cbc-6212-4e1c-95f1-02f9769ec1b6","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"0a5c1cbc-6212-4e1c-95f1-02f9769ec1b6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d7a253aa-92fa-4d7d-b8e5-455414c96427","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d7a253aa-92fa-4d7d-b8e5-455414c96427","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"d7a253aa-92fa-4d7d-b8e5-455414c96427","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"bec47ed0-eaf5-4fe7-a325-b40db59a4a7b","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bec47ed0-eaf5-4fe7-a325-b40db59a4a7b","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"bec47ed0-eaf5-4fe7-a325-b40db59a4a7b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a99da3de-c1d9-433c-98ef-541e9b5deca4","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a99da3de-c1d9-433c-98ef-541e9b5deca4","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"a99da3de-c1d9-433c-98ef-541e9b5deca4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"96d49e9c-1f11-4c1e-8077-ca4e6f5c3839","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"96d49e9c-1f11-4c1e-8077-ca4e6f5c3839","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"96d49e9c-1f11-4c1e-8077-ca4e6f5c3839","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"925970c3-1129-4820-85b2-39af984042eb","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"925970c3-1129-4820-85b2-39af984042eb","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"925970c3-1129-4820-85b2-39af984042eb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fecd977a-95bb-4363-8f35-3047fd044660","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fecd977a-95bb-4363-8f35-3047fd044660","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"fecd977a-95bb-4363-8f35-3047fd044660","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9adbfad8-9403-4ecc-8128-5e9fb437c9c5","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9adbfad8-9403-4ecc-8128-5e9fb437c9c5","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"9adbfad8-9403-4ecc-8128-5e9fb437c9c5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8389c6e8-e3ff-4962-914f-5558f92ddebc","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8389c6e8-e3ff-4962-914f-5558f92ddebc","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"8389c6e8-e3ff-4962-914f-5558f92ddebc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1287fe1d-fe8e-40e2-a48f-a61590972d50","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1287fe1d-fe8e-40e2-a48f-a61590972d50","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"1287fe1d-fe8e-40e2-a48f-a61590972d50","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c6ef4ddb-bc5e-4f5f-aac6-21eb197d1992","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c6ef4ddb-bc5e-4f5f-aac6-21eb197d1992","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"c6ef4ddb-bc5e-4f5f-aac6-21eb197d1992","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8c4be01d-15a8-4618-b296-9cf1da6e6be3","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8c4be01d-15a8-4618-b296-9cf1da6e6be3","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"8c4be01d-15a8-4618-b296-9cf1da6e6be3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e8900fb5-ae69-4931-94d1-a5f2eaaea57c","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e8900fb5-ae69-4931-94d1-a5f2eaaea57c","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"e8900fb5-ae69-4931-94d1-a5f2eaaea57c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0d77a5e4-b2c0-4203-8c88-6c9a999955f0","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0d77a5e4-b2c0-4203-8c88-6c9a999955f0","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"0d77a5e4-b2c0-4203-8c88-6c9a999955f0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9ef3d885-10eb-4647-87c6-76adebffa0dd","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9ef3d885-10eb-4647-87c6-76adebffa0dd","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"9ef3d885-10eb-4647-87c6-76adebffa0dd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"93e310bd-1dd4-46c3-abe6-a0f588e72a19","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"93e310bd-1dd4-46c3-abe6-a0f588e72a19","path":"sprites/sGamepad/sGamepad.yy",},"LayerId":{"name":"f89d54fc-0a64-4826-b631-7584b91a2c01","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","name":"93e310bd-1dd4-46c3-abe6-a0f588e72a19","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 10.0,
+    "playbackSpeedType": 0,
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 21.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"ce422666-0a3b-4db5-ad78-d24340703844","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c1d75498-d0d3-45a5-bb7b-238983d8e456","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d919fe64-e1bc-4248-ab01-8b87fb84a0e5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6731847d-ba27-44fc-a080-c25e92d240dd","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"41b6eba7-729b-4bdb-bc76-13a8d99e9e2f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0cf39296-d700-40b3-b18c-b206eaf287db","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a69364b4-b95d-48b9-a42d-80c7c934cf80","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a932d867-6c4b-4636-9773-4a3cf8d491ab","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9d656511-bdd1-418e-8467-51c593a330f9","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2b91a11c-29f5-4655-998f-0babf46d0240","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3c560b88-95a3-41dc-9bce-ff41a2fd824a","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a5c1cbc-6212-4e1c-95f1-02f9769ec1b6","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1afb7956-fbde-461b-b6d0-d30703018856","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d7a253aa-92fa-4d7d-b8e5-455414c96427","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2fb746ad-f507-4c80-8f63-652df7ef121f","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bec47ed0-eaf5-4fe7-a325-b40db59a4a7b","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d2205857-3223-48de-bfb9-cf4ba7ba07cb","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a99da3de-c1d9-433c-98ef-541e9b5deca4","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"595449e7-e526-4a58-9245-fc92ef43ba20","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"96d49e9c-1f11-4c1e-8077-ca4e6f5c3839","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4f12e826-2f1d-4fa5-948e-c423f5f8604d","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"925970c3-1129-4820-85b2-39af984042eb","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"58b93048-6de1-4bf2-a919-9522b5456b12","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fecd977a-95bb-4363-8f35-3047fd044660","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"145ab00e-1fa2-44f4-aae9-dbbaa3b3872d","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9adbfad8-9403-4ecc-8128-5e9fb437c9c5","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9c573c44-ab21-4d86-a2c3-2cf50a6188c6","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8389c6e8-e3ff-4962-914f-5558f92ddebc","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d0cb5fd7-a1ee-454b-b305-92cf2d066bca","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1287fe1d-fe8e-40e2-a48f-a61590972d50","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fcbf6f8f-65a7-480a-bac4-bf8112fdf85b","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c6ef4ddb-bc5e-4f5f-aac6-21eb197d1992","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c4930b00-36e9-44c9-b998-2e7c7dcac02f","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8c4be01d-15a8-4618-b296-9cf1da6e6be3","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b18267aa-392d-4642-a8ff-3226292db924","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e8900fb5-ae69-4931-94d1-a5f2eaaea57c","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bd2f0420-0b72-426b-ba88-25307c9dec86","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d77a5e4-b2c0-4203-8c88-6c9a999955f0","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d22f75e0-5a0b-4ac5-b317-d23dbc4aefb6","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ef3d885-10eb-4647-87c6-76adebffa0dd","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c2c5f1fd-822c-4a0c-a7f3-72cf26eca194","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"93e310bd-1dd4-46c3-abe6-a0f588e72a19","path":"sprites/sGamepad/sGamepad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": null,
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 0,
+    "yorigin": 0,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"sGamepad","path":"sprites/sGamepad/sGamepad.yy",},
+    "resourceVersion": "1.3",
+    "name": "sGamepad",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f89d54fc-0a64-4826-b631-7584b91a2c01","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "Kenney",
+    "path": "folders/Sprites/Kenney.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "sGamepad",
+  "tags": [],
+  "resourceType": "GMSprite",
+}

@@ -24,13 +24,18 @@ function create_poof() {
 	return create_sprite({spr: sPoof})
 }
 
+die = function() {
+	create_poof()
+	audio_play_sound_mute(aEnemyHit, 0, 0)
+	create_freeze({time: 50})
+	instance_destroy()
+}
+
 handleHealth = function() {
 	hp = clamp(hp, 0, max_hp)
 	
 	if hp = 0 {
-		create_poof()
-		create_freeze({time: 50})
-		instance_destroy()
+		die()
 	}
 }
 

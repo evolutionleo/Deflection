@@ -19,10 +19,18 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oPowerable","path":"objects/oPowerable/oPowerable.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"parent":{"name":"oPowerable","path":"objects/oPowerable/oPowerable.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"active","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"channel","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":6,"value":"\"X Or More\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
+        "\"X\"",
+        "\"X Or More\"",
+        "\"X Or Less\"",
+        "\"Not X\"",
+      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"needed_power","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"X","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {

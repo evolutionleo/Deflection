@@ -10,7 +10,7 @@ switch(movement_pattern) {
 		break
 	case "Path":
 		try {
-			var my_path = global.Paths.Get(path_id)
+			my_path = global.Paths.Get(path_id)
 		}
 		catch(err) {
 			exit
@@ -61,11 +61,11 @@ switch(movement_pattern) {
 		
 		break
 	case "HorizontalCycle":
-		var nextX = pos.x+spd.x
-		var nextY = pos.y+spd.y
-		var sw = abs(sprite_width)*sign(spd.x)/2
+		nextX = pos.x+spd.x
+		nextY = pos.y+spd.y
+		sw = abs(sprite_width)*sign(spd.x)/2
 		
-		var offCliff = !meetingGround(nextX + sw, nextY + 1)
+		offCliff = !meetingGround(nextX + sw, nextY + 1)
 		
 		if(move.x == 0) {
 			move.x = 1
@@ -80,11 +80,11 @@ switch(movement_pattern) {
 		
 		break
 	case "VarticalCycle":
-		var sh = abs(sprite_height) * sign(spd.y)/2
-		var nextX = pos.x+spd.x
-		var nextY = pos.y+spd.y
+		sh = abs(sprite_height) * sign(spd.y)/2
+		nextX = pos.x+spd.x
+		nextY = pos.y+spd.y
 		
-		var offWall = (!meetingGround(nextX+1, nextY+sh) or !meetingGround(nextX-1, nextY+sh))
+		offWall = (!meetingGround(nextX+1, nextY+sh) or !meetingGround(nextX-1, nextY+sh))
 		
 		if(move.y == 0) {
 			move.y = 1
@@ -106,9 +106,9 @@ switch(movement_pattern) {
 
 
 if(movement_pattern != "HorizontalCycle" and movement_pattern != "VerticalCycle") {
-	var _dir = point_direction(pos.x, pos.y, targetx, targety)
-	var xdir = lengthdir_x(1, _dir)
-	var ydir = lengthdir_y(1, _dir)
+	_dir = point_direction(pos.x, pos.y, targetx, targety)
+	xdir = lengthdir_x(1, _dir)
+	ydir = lengthdir_y(1, _dir)
 	
 	move = new Vector2(xdir, ydir)
 }

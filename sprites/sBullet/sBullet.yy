@@ -1,7 +1,6 @@
 {
   "bboxMode": 2,
   "collisionKind": 1,
-  "separateMasks": false,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
@@ -73,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bb63991b-3fd7-4fae-9f0a-b3499a5fd862","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Level elements",
-    "path": "folders/Sprites/Level elements/Level elements.yy",
+    "name": "Entities",
+    "path": "folders/Sprites/Entities.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBullet",

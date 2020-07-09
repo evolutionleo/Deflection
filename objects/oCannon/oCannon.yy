@@ -30,14 +30,15 @@
   "properties": [
     {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"lock_on","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"dir","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":4,"value":"{}","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"props","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"{}","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"_props","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":0,"value":"20","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"rate","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"16","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"radius","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"oBullet","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"bullet_type","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level Elements",
-    "path": "folders/Objects/Level Elements.yy",
+    "name": "In-level",
+    "path": "folders/Objects/Level Elements/In-level.yy",
   },
   "resourceVersion": "1.0",
   "name": "oCannon",

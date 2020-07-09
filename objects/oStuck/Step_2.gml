@@ -1,9 +1,6 @@
 ///@desc
 
-if !instance_exists(target)
-	target = noone
-
-if target != noone
+if target != noone and instance_exists(target)
 {
 	xoff = (xoff == "auto")
 		? x - target.x

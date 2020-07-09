@@ -25,7 +25,7 @@ function autoset(type, inst, name, func) {
 	#endregion
 	
 	var props = {type: type, inst: inst, name: name, func: func}
-	return setInterval(method(self, function(props) {
+	return setInterval(self, function(props) {
 		#region Regular setting
 		
 		var type = props.type
@@ -49,7 +49,7 @@ function autoset(type, inst, name, func) {
 		}
 		
 		#endregion
-	}), 1, props, {})
+	}, 1, props)
 }
 
 function autobreak(id) {

@@ -1,7 +1,6 @@
 {
   "bboxMode": 0,
   "collisionKind": 1,
-  "separateMasks": false,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
@@ -101,8 +100,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2782b158-fbf4-46ed-b584-cf53d1c7f3af","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Level elements",
-    "path": "folders/Sprites/Level elements/Level elements.yy",
+    "name": "In-level",
+    "path": "folders/Sprites/Level elements/In-level.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPoint",

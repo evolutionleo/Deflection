@@ -1,7 +1,6 @@
 {
   "bboxMode": 0,
   "collisionKind": 1,
-  "separateMasks": false,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -77,8 +76,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5c49aae0-5c61-45b3-af2f-ac686edd3be5","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "1 bit",
-    "path": "folders/Sprites/1 bit.yy",
+    "name": "Kenney",
+    "path": "folders/Sprites/Kenney.yy",
   },
   "resourceVersion": "1.0",
   "name": "sCoin",

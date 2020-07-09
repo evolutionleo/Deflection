@@ -1,0 +1,59 @@
+Tags/ideas
+
+Metroidvania
+Dynamic gameplay
+Defence > Offence
+Signature moves: Shield Parry and Dash
+Tight, but fair timing
+No sword/gun
+Some bullets are impossible to parry, some can’t be dashed through
+Enemies designed for different dodging patterns
+
+
+All upgrades
+
+\/	Double Jump,	//Additional jump in the air
+\/	Wall Jump,		//Ability to infinitely jump off walls.
+					//possible to climb single walls
+
+\/	Shield,			//Ability to parry attacks
+\/	Shield Jump,	//Restore jump after blocking
+\/	Shield Slide,	//Slide on spikes/slopes
+	Shield Bash,	//Deal damage by 'shielding' enemies
+
+\/	Dash,			//Fast dash with invincibility frames
+//	Hyper Dash		//Charged dash. Like regular dash but last longer 
+					//=> gives more distance
+
+??	Grapple Hook	//Ability to grab special walls and 
+
+
+
+World Locations/Bosses
+
+0)	Tutorial		-	The Eye
+1)	Forrest/Lake	-	Water Lord
+2)	Mountain/Peak	-	Air Lord
+3)	Caves/Caverns	-	Earth Lord
+4)	Hell			-	Fire Lord
+5)	Core			-	Reflection
+
+
+En3m135
+
+1) Forrest/Lake
+\/	1.1) Slime
+\/	1.2) Turtle
+2) Mountain/Peak
+	2.1) Bird
+	2.2) Earth mage
+3) Caves/Caverns
+	3.1) Spider
+	3.2) Snake
+	3.3) Bat
+4) Hell
+	4.1) Fiery slime
+	4.2) Fire elemental
+5) Core
+	5.1) Shadow avatar
+	5.2) Reflection (boss)

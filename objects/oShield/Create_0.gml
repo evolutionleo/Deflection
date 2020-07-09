@@ -1,31 +1,40 @@
 /// @desc
-#macro Inactive 0
-#macro Deactivating 1
-#macro Activating 2
-#macro Active 3
+#region State
 
-Input = require("input")
-Input.addBind("parry", -mb_left)
+#macro Inactive 20
+#macro Deactivating 21
+#macro Activating 22
+#macro Active 23
+#macro SlideStart 24
+#macro Slide 25
 
 state = Inactive
 
 
 parried = 0
 
-//blinking = false
-//setInterval(function() { 
-//	if active_time <= max_active_time/3 and state == Active
-//		blinking = !blinking
-//	else
-//		blinking = false
-//}, 5)
-
-
-active_time = 0
-max_active_time = 15
+active_time = 0 //Remaining
+max_active_time = 20
+real_max_active_time = 40
 
 cooldown = 0
-max_cooldown = 120
+max_cooldown = 60
 
+#endregion
+#region Input
+
+Input = require("input")
+Input.addBind("parry", mb_left-100)
+Input.addBind("parry", gp_shoulderrb+100)
+
+#endregion
+#region Position
 
 pos = new Vector2(x, y)
+radius = 18
+
+
+image_xscale = 1.5
+image_yscale = 1.5
+
+#endregion

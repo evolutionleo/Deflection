@@ -29,8 +29,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level Elements",
-    "path": "folders/Objects/Level Elements.yy",
+    "name": "In-level",
+    "path": "folders/Objects/Level Elements/In-level.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPureGate",

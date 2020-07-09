@@ -1,0 +1,2 @@
+/// @desc
+audio_mute()

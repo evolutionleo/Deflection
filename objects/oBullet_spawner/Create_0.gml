@@ -11,7 +11,7 @@ shoot = function()
 	var vy2 = vy1 + camera_get_view_height(view_camera[0])
 	
 	if(x > vx1 and x < vx2 and y > vy1 and y < vy2) {
-		audio_play_sound(aShoot, 1, 0)
+		audio_play_sound_mute(aShoot, 1, 0)
 	}
 	
 	if !active
@@ -33,7 +33,7 @@ shoot = function()
 	props.ForEach(function(val, name) {
 		variable_instance_set(bul, name, val)
 	})
-	props = props.content	
+	props = props.content
 }
 
 

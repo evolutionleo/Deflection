@@ -1,36 +1,47 @@
 /// @desc
-draw_sprite(sTiles, 0, 0, 0)
+//draw_sprite(hTiles, 0, 0, 0)
 
-var xtiles = sprite_get_width(sTiles) / TILE_SIZE
-var ytiles = sprite_get_height(sTiles) / TILE_SIZE
-
-for(var xtile = 0; xtile < xtiles; xtile++)
-{
-	for(var ytile = 0; ytile < ytiles; ytile++)
-	{
-		var this_tile = array_create(TILE_SIZE, array_create(TILE_SIZE, 0))
+#region //Tile collision mask
+//for(var ytile = 0; ytile < ytiles; ytile++)
+//{
+//	for(var xtile = 0; xtile < xtiles; xtile++)
+//	{
+//		// Create (binary) tile grid.
+//		var this_tile = array_create(TILE_SIZE, array_create(TILE_SIZE, 0))
+//		var tile_id = ytile*TILE_SIZE+xtile
 		
-		for(var xx = 0; xx < TILE_SIZE; xx++)
-		{
-			for(var yy = 0; yy < TILE_SIZE; yy++)
-			{
-				var col = draw_getpixel(xtile * TILE_SIZE + xx, ytile * TILE_SIZE + yy)
-				var bit = (col != c_black)
+//		if !global.nonsolid_tiles.Exists(tile_id)
+//		{
+//			// Fill the data. White = 1 = solid
+//			for(var xx = 0; xx < TILE_SIZE; xx++)
+//			{
+//			for(var yy = 0; yy < TILE_SIZE; yy++)
+//			{	
+//				var col = surface_getpixel(application_surface, xtile * TILE_SIZE + xx, ytile * TILE_SIZE + yy)
+//				var bit = (col != c_black)
 				
-				this_tile[xx][yy] = bit
-			}
-		}
+//				//if(xtile == 1) {
+//				//	show_message("Getting pixel at: (x: "+string(xtile*TILE_SIZE + xx)+"; y: "+string(ytile*TILE_SIZE + yy)+")")
+//				//	show_message("Got color: "+string(col))
+//				//}
+				
+//				this_tile[xx][yy] = bit
+//			}
+//		}
+//		}
 		
-		global.collision_map.Append(this_tile)
-	}
-}
+//		global.collision_map.Append(this_tile)
+//	}
+//}
+#endregion
+#region Debug
+//global.collision_map.ForEach(function(tile, pos) {
+//	show_debug_message("_______ tile#"+string(pos)+" ________")
+//	for(var xx = 0; xx < TILE_SIZE; xx++) {
+//		show_debug_message(tile[xx])
+//	}
+//})
+#endregion
 
-
-global.collision_map.ForEach(function(tile) {
-	show_debug_message("_______")
-	for(var xx = 0; xx < TILE_SIZE; xx++) {
-		show_debug_message(tile[xx])
-	}
-})
-
-//room_goto_next()
+//draw_clear(c_white)
+room_goto_next()

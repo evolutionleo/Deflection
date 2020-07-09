@@ -1,7 +1,6 @@
 {
   "bboxMode": 0,
   "collisionKind": 1,
-  "separateMasks": false,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -89,8 +88,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c5ec9908-377e-4143-bdb8-f1d50ea7e0e9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "1 bit",
-    "path": "folders/Sprites/1 bit.yy",
+    "name": "Kenney",
+    "path": "folders/Sprites/Kenney.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPotion",

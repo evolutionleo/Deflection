@@ -107,6 +107,11 @@ function Vector2(_x, _y) constructor {
 		
 		return self;
 	}
+	
+	///@function	Hypotenuse()
+	static Hypotenuse = function() {
+		return sqrt((x * x) + (y * y))
+	}
 }
 
 

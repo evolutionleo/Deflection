@@ -1,7 +1,6 @@
 {
   "bboxMode": 0,
   "collisionKind": 1,
-  "separateMasks": false,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -60,7 +59,7 @@
     "spriteId": {"name":"sNumber","path":"sprites/sNumber/sNumber.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 1E-07,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -105,8 +104,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a307f5e6-c666-4cb6-a875-9eef70ce9491","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "1 bit",
-    "path": "folders/Sprites/1 bit.yy",
+    "name": "Kenney",
+    "path": "folders/Sprites/Kenney.yy",
   },
   "resourceVersion": "1.0",
   "name": "sNumber",

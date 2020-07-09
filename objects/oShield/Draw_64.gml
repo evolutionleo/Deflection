@@ -1,10 +1,10 @@
-/// @desc
+/// @desc Draw cooldown
 var vw = display_get_gui_width()
 var vh = display_get_gui_height()
 
 
 if state == Active {
-	var val = (max_active_time-active_time)/max_active_time*100
+	var val = (active_time)/max_active_time*100
 }
 else {//if state == Inactive {
 	var val = (max_cooldown-cooldown)/max_cooldown*100

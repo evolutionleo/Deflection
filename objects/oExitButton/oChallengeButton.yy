@@ -1,0 +1,42 @@
+{
+  "spriteId": {
+    "name": "sUIButtonTrigger",
+    "path": "sprites/sUIButtonTrigger/sUIButtonTrigger.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "oUIButton",
+    "path": "objects/oUIButton/oUIButton.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oChallengeButton","path":"objects/oChallengeButton/oChallengeButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"text","path":"objects/oUIButton/oUIButton.yy",},"objectId":{"name":"oUIButton","path":"objects/oUIButton/oUIButton.yy",},"value":"Challenges","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"active","path":"objects/oUIButton/oUIButton.yy",},"objectId":{"name":"oUIButton","path":"objects/oUIButton/oUIButton.yy",},"value":"false","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "Buttons",
+    "path": "folders/Objects/UI/Buttons.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "oChallengeButton",
+  "tags": [],
+  "resourceType": "GMObject",
+}

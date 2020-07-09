@@ -14,8 +14,8 @@ else {
 	x += spd.x
 	y += spd.y
 }
-
-alpha -= fade_speed
+if timer > fade_offset
+	alpha -= fade_speed
 
 if lifetime < timer
 	instance_destroy()

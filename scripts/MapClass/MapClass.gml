@@ -21,10 +21,10 @@ function Map() constructor {
 	}
 	
 	ForEach = function(func) {
-		var names = variable_struct_get_names(self.content)
+		names = variable_struct_get_names(self.content)
 		for(var i = 0; i < array_length(names); i++) {
-			var name = names[i]
-			var value = variable_struct_get(self.content, name)
+			name = names[i]
+			value = variable_struct_get(self.content, name)
 			
 			// Actually sorry for that. Order is value -> kay -> pos. I know that's weird
 			func(value, name, i)
@@ -42,6 +42,30 @@ function to_Map(struct) {
 		return new Map(struct)
 	else
 		throw "TypeError: function to_Map(). Expected struct, got "+string(typeof(struct))
+}
+
+function ds_map_from_struct(struct) {
+	map = ds_map_create()
+	names = variable_struct_get_names(struct)
+	
+	for(var i = 0; i < array_length(names); i++) {
+		name = names[i]
+		val = variable_struct_get(struct, name)
+		
+		map[? name] = val
+	}
+	
+	return map
+}
+
+function ds_map_to_struct(map) {
+	__struct = {}
+	
+	for(var k = ds_map_find_first(map); !is_undefined(k); k = ds_map_find_next(map, k)) {
+		variable_struct_set(__struct, k, map[? k])
+	}
+	
+	return __struct
 }
 
 

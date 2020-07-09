@@ -1,10 +1,13 @@
 _dependencies = [
-	InputClass()
+	InputClass(),
+	JSON(),
+	Shortened()
 ]
 
 global.modules = {
 	input: global.Input,
-	json: global.Json
+	json: global.Json,
+	_: global._
 }
 
 ///@function	require(module)

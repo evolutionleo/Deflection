@@ -1,0 +1,2 @@
+/// @desc
+delete global.portals

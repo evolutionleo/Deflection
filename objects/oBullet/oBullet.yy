@@ -38,8 +38,8 @@
     {"propertyId":{"name":"ygrv","path":"objects/oPhysics_object/oPhysics_object.yy",},"objectId":{"name":"oPhysics_object","path":"objects/oPhysics_object/oPhysics_object.yy",},"value":"0","resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Parents",
-    "path": "folders/Objects/Parents.yy",
+    "name": "Entities",
+    "path": "folders/Objects/Entities.yy",
   },
   "resourceVersion": "1.0",
   "name": "oBullet",

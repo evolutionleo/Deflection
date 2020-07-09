@@ -1,0 +1,2 @@
+/// @desc
+streamed = false

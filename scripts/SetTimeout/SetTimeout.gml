@@ -8,7 +8,7 @@ _dependencies = [
 ///@param	{real} inst
 ///@param	{int} delay
 ///@param	{struct} props
-function call_inst(_func, _inst, _delay, _props) {
+function call_inst(__func, __inst, __delay, __props) {
 	
 	if !instance_exists(oCallstack)
 		instance_create_depth(0, 0, 0, oCallstack)
@@ -19,21 +19,23 @@ function call_inst(_func, _inst, _delay, _props) {
 	}
 	
 	props = new Map(props)
-	_props = new Map(_props)
+	__props = new Map(__props)
 	
-	_props.ForEach(function(prop, name) {
+	__props.ForEach(function(prop, name) {
 		other.props.Set(name, prop)
 	})
 	
-	delete _props
+	//delete _props
 	
 	props = props.content
 	
+	static id_counter = new Counter()
+	__id = id_counter.GetCounter()
 	
-	var _object = {inst: _inst, func: _func, time: _delay, max_time: _delay, props: props}
+	var _object = {_id: __id, _inst: __inst, _func: __func, _time: __delay, _max_time: __delay, _props: props}
 	oCallstack.callstack.PushBack(_object)
 	
-	return _object
+	return __id
 }
 
 ///@function	setTimeout(func, delay, *)
@@ -54,15 +56,20 @@ function setTimeout(inst, func, delay) {
 	//var inst = instance_create_depth(0, 0, 0, oDelay)
 	//inst.delay = delay
 	//inst.execute = func
+	//inst.repeatable = true
 	
 	if(argument_count > 3) {
 		var props = argument[3]
 	}
 	else props = {}
 	
-	inst = other
 	
+	//props.cycle = true
+	//props.pers = false
+
 	//return inst
+	
+	//inst = self
 	return call_inst(func, inst, delay, props)
 }
 
@@ -93,11 +100,12 @@ function setInterval(inst, func, delay) {
 	
 	
 	props.cycle = true
+	//props.pers = false
 
 	//return inst
 	
-	inst = other
-	call_inst(func, inst, delay, props)
+	//inst = self
+	return call_inst(func, inst, delay, props)
 }
 
 ///@function	stopTimeout(*id)
@@ -109,6 +117,13 @@ function stopTimeout() {
 	else
 		_id = self
 	
+	with(oCallstack)
+	{
+		id._id = _id
+		callstack = callstack.Filter(function(call) {
+			return call._id != _id
+		})
+	}
 	//instance_destroy(_id)
 }
 
@@ -121,6 +136,14 @@ function stopInterval() {
 	else
 		_id = self
 	
+	
+	with(oCallstack)
+	{
+		id._id = _id
+		callstack = callstack.Filter(function(call) {
+			return call._id != _id
+		})
+	}
 	//instance_destroy(_id)
 }
 

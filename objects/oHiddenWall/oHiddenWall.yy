@@ -38,8 +38,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level Elements",
-    "path": "folders/Objects/Level Elements.yy",
+    "name": "Triggers n stuff",
+    "path": "folders/Objects/Level Elements/Triggers n stuff.yy",
   },
   "resourceVersion": "1.0",
   "name": "oHiddenWall",

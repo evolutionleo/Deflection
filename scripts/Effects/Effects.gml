@@ -1,3 +1,7 @@
+_dependencies = [
+	SetTimeout()
+]
+
 function inheritProps(_props) {
 	_props = new Map(_props)
 	_props.ForEach(function(val, name) {
@@ -25,10 +29,22 @@ function create_freeze(_props) {
 	
 	props = props.content
 	
+	
+	static freeze_limit = 150
+	global.freeze += props.time
+	
+	if global.freeze > freeze_limit {
+		props.time -= global.freeze - freeze_limit
+		global.freeze = freeze_limit
+	}
+	
 	var target_time = current_time + props.time
 	
 	while (current_time < target_time) {}
 }
+
+
+global.freeze = 0
 
 function create_sprite(_props) {
 	props = new Map(

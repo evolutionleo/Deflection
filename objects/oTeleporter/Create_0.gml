@@ -1,19 +1,17 @@
 /// @desc
 teleport = function(inst) {
 	var can_teleport = false
-	var next_id = portal_id + 1
 	
 	while(!can_teleport)
-	{	
-		try {
-			var next_portal = global.portals.Get(next_id)
-		}
-		catch(err) {
-			next_portal = global.portals.Get(0)
+	{
+		var next_id = portal_id + 1
+		
+		if next_id >= global.portals.Size {
+			var next_id = 0
 		}
 		
-		//show_message(global.portals)
-		//show_message(next_portal)
+		
+		var next_portal = global.portals.Get(next_id)
 		
 		if next_portal == self
 			return -1
