@@ -119,10 +119,10 @@ if (buffer.afterdash > 0) and tile3 { //state == Dash ||
 	buffer.afterdash = 2
 	state = Dash
 	
-	if spd.Hypotenuse() < dash_spd { // Don't go terribly slow
+	if spd.Hypotenuse() < dream_spd { // Don't go terribly slow
 		_dir = pdir(0, 0, spd.x, spd.y)
-		spd.x = lengthdir_x(dash_spd, _dir)
-		spd.y = lengthdir_y(dash_spd, _dir)
+		spd.x = lengthdir_x(dream_spd, _dir)
+		spd.y = lengthdir_y(dream_spd, _dir)
 	}
 	
 	
@@ -131,6 +131,7 @@ if (buffer.afterdash > 0) and tile3 { //state == Dash ||
 		dashes = 0
 		air_jumps = 0
 		buffer.afterdash = 1
+		spd.Multiply(toVector2(.5))
 		
 		
 		state = Jump // Don't apply dash buffer again

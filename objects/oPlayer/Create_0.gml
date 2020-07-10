@@ -30,6 +30,7 @@ add_jump_vec = new Vector2(0, 0)
 walljump_vec = new Vector2(4.5, -8.5)
 
 dash_spd = 12
+dream_spd = 5
 //dash_spd = 100
 
 bounce_vec = new Vector2(0, -5.5)
@@ -256,8 +257,9 @@ save = function() {
 		
 		ini_open("coords.ini")
 		ini_write_real("Position", "x", pos.x)
+		ini_write_real("Room", "room", room)
 		ini_write_real("Position", "y", pos.y)
-		ini_write_string("Greetings", "Hello, dear ", "hacker")
+		ini_write_string("Greetings", "Hello", "Dear Hacker")
 		ini_close()
 		
 		
@@ -286,8 +288,13 @@ load = function() {
 	}
 	
 	ini_open("coords.ini")
-	pos.x = ini_read_real("Position", "x", pos.x)
-	pos.y = ini_read_real("Position", "y", pos.y)
+
+	var rm = ini_read_real("Room", "room", room)
+	if room == rm
+	{
+		pos.x = ini_read_real("Position", "x", pos.x)
+		pos.y = ini_read_real("Position", "y", pos.y)
+	}
 	ini_close()
 	
 	
@@ -297,6 +304,7 @@ load = function() {
 	}
 	_cam.active = true
 	global.next_camera = _cam.cam_id
+	
 }
 
 ///@function setIframes(iframes)
@@ -438,7 +446,7 @@ updateUpgrades = function() {
 load()
 
 //if debug_mode {
-	upgrades.Append("Dash")
+	//upgrades.Append("Dash")
 	//upgrades.Append("Shield")
 	//upgrades.Append("Wall Jump")
 	//upgrades.Append("Shield Jump")

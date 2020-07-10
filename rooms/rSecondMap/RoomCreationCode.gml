@@ -2,7 +2,7 @@
 
 
 global.camera_ready = false
-global.next_camera = 0
+global.next_camera = 59
 
 with(oCameraAnchor) {
 	if active {

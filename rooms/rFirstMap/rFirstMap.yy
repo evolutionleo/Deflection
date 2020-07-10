@@ -358,13 +358,13 @@
             {"propertyId":{"name":"channel","path":"objects/oTrigger/oTrigger.yy",},"objectId":{"name":"oTrigger","path":"objects/oTrigger/oTrigger.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oTrigger","path":"objects/oTrigger/oTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":3.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1008.0,"y":928.0,"resourceVersion":"1.0","name":"inst_1C1BE31B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
-            {"propertyId":{"name":"rm","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"objectId":{"name":"oRoomTrigger","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"value":"rWin","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"rm","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"objectId":{"name":"oRoomTrigger","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"value":"rSecondMap","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oRoomTrigger","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":3.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-48.0,"y":816.0,"resourceVersion":"1.0","name":"inst_4AC5AFF2","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
-            {"propertyId":{"name":"rm","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"objectId":{"name":"oRoomTrigger","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"value":"rWin","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"rm","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"objectId":{"name":"oRoomTrigger","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"value":"rSecondMap","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oRoomTrigger","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.5,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-48.0,"y":928.0,"resourceVersion":"1.0","name":"inst_4863FB35","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
-            {"propertyId":{"name":"rm","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"objectId":{"name":"oRoomTrigger","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"value":"rWin","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"rm","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"objectId":{"name":"oRoomTrigger","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"value":"rSecondMap","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oRoomTrigger","path":"objects/oRoomTrigger/oRoomTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.5,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-48.0,"y":784.0,"resourceVersion":"1.0","name":"inst_5C07029E","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Triggers","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -968,7 +968,7 @@
     {"spriteId":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":true,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":1600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}\\rooms\\rFirstMap\\RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/rFirstMap/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_709375EA","path":"rooms/rFirstMap/rFirstMap.yy",},

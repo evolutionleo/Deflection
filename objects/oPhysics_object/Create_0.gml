@@ -20,15 +20,15 @@ pointGround = function(_x, _y) {
 	if _x > room_width || _y > room_height || _x < 0 || _y < 0
 		return 0
 	
-	tilemap = layer_tilemap_get_id(layer_get_id("Wall"))
-	tilemap2 = layer_tilemap_get_id(layer_get_id("HiddenWall"))
-	tilemap3 = layer_tilemap_get_id(layer_get_id("Dreamblock"))
-	tile = tile_get_index(tilemap_get_at_pixel(tilemap, _x, _y))
-	tile2 = tile_get_index(tilemap_get_at_pixel(tilemap2, _x, _y))
-	tile3 = tile_get_index(tilemap_get_at_pixel(tilemap3, _x, _y))
+	var tilemap = layer_tilemap_get_id(layer_get_id("Wall"))
+	var tilemap2 = layer_tilemap_get_id(layer_get_id("HiddenWall"))
+	var tilemap3 = layer_tilemap_get_id(layer_get_id("Dreamblock"))
+	var tile = tile_get_index(tilemap_get_at_pixel(tilemap, _x, _y))
+	var tile2 = tile_get_index(tilemap_get_at_pixel(tilemap2, _x, _y))
+	var tile3 = tile_get_index(tilemap_get_at_pixel(tilemap3, _x, _y))
 	
 	//show_debug_message(tile)
-	if tile != 0 and tile != 8 and tile != 10 { // Numbers represent tiles w/o hitbox
+	if tile != 0 and tile != 8 and tile != 10 and tile != 21 and tile != 22 { // Numbers represent tiles w/o hitbox
 	//if tile_get_index(tilemap_get_at_pixel(tilemap, _x, _y)) {
 		//var grid = global.collision_map.Get(tile)
 		
@@ -45,7 +45,7 @@ pointGround = function(_x, _y) {
 		
 		return position_meeting(_x, _y, oGround)
 	}
-	else if tile2 != 0 and tile2 != 8 and tile2 != 10 { // Numbers represent tiles w/o hitbox
+	else if tile2 != 0 and tile2 != 8 and tile2 != 10 and tile2 != 21 and tile2 != 22 { // Numbers represent tiles w/o hitbox
 		
 		//var grid = global.collision_map.Get(tile2)
 		
@@ -85,10 +85,10 @@ pointGround = function(_x, _y) {
 meetingGround = function(_x, _y) {
 	#region Get sides
 	
-	left = floor(bbox_left-x+_x)
-	right = ceil(bbox_right-x+_x)
-	top = floor(bbox_top-y+_y)
-	bottom = ceil(bbox_bottom-y+_y)
+	var left = floor(bbox_left-x+_x)
+	var right = ceil(bbox_right-x+_x)
+	var top = floor(bbox_top-y+_y)
+	var bottom = ceil(bbox_bottom-y+_y)
 	
 	#endregion
 	#region Quit!
@@ -98,8 +98,8 @@ meetingGround = function(_x, _y) {
 	if object_index == oPlayer {
 	#region Check every [second] pixel
 	
-	//var delta = 2
-	delta = 2
+	var xx, yy
+	var delta = 2
 	
 	//if pointGround(left, top)
 	//|| pointGround(right, top)
@@ -159,10 +159,11 @@ meetingGround = function(_x, _y) {
 	}
 	
 	// Dropdown and One way platforms
-	if spd.y >= 0 {
-		dropdown = position_meeting_flag(_x, bbox_bottom - y + _y + 1, DROPDOWN)
-		oneway = position_meeting_flag(_x, bbox_bottom - y + _y + 1, ONEWAY)
-		on_platform = oneway or (dropdown and !buffer.dropdown)
+	if spd.y >= 0
+	{
+		var dropdown =	place_meeting_flag(_x, _y, DROPDOWN) and place_meeting_flag(_x, _y+4, DROPDOWN)
+		var oneway	 =	place_meeting_flag(_x, _y, ONEWAY)	 and place_meeting_flag(_x, _y+4, ONEWAY)
+		var on_platform = oneway or (dropdown and !buffer.dropdown)
 		
 		if on_platform
 			return true
@@ -185,16 +186,16 @@ meetingGround = function(_x, _y) {
 }
 
 pointDreamblock = function(_x, _y) {
-	tilemap = layer_tilemap_get_id(layer_get_id("Dreamblock"))
+	var tilemap = layer_tilemap_get_id(layer_get_id("Dreamblock"))
 	//return tile_get_index(tilemap_get_at_pixel(tilemap, _x, _y))
 	return tilemap_get_at_pixel(tilemap, _x, _y)
 }
 
 meetingDreamblock = function(_x, _y) {
-	left	= floor	(bbx_l - pos.x + _x)
-	right	= ceil	(bbx_r - pos.x + _x)
-	top		= floor	(bbx_t - pos.y + _y)
-	bottom	= ceil	(bbx_b - pos.y + _y)
+	var left	= floor	(bbx_l - pos.x + _x)
+	var right	= ceil	(bbx_r - pos.x + _x)
+	var top		= floor	(bbx_t - pos.y + _y)
+	var bottom	= ceil	(bbx_b - pos.y + _y)
 	
 	return pointDreamblock(_x, _y)
 		|| pointDreamblock(left, top)
@@ -251,14 +252,14 @@ collision = function() {
 	staircase = false
 	
 	// Change the behaviour if inside a dream block
-	__tile3 = object_index == oPlayer and meetingDreamblock(pos.x, pos.y)
+	var __tile3 = object_index == oPlayer and meetingDreamblock(pos.x, pos.y)
 	
 	
 	#region X collision
 	#region Check for collision
-	xcol = function() {
-		xx = pos.x
-		yy = pos.y
+	var xcol = function() {
+		var xx = pos.x
+		var yy = pos.y
 		repeat(abs(spd.x) div clip_width) {
 			xx += clip_width * sign(spd.x)
 			if meetingGround(xx, yy)
@@ -275,7 +276,7 @@ collision = function() {
 		if !meetingGround(pos.x + spd.x, pos.y - stair_height)
 		{
 			//var check = stair_height
-			check = 1
+			var check = 1
 			for(; check <= stair_height; check++)
 			{
 				if !meetingGround(pos.x + spd.x, pos.y - check) {
@@ -324,9 +325,9 @@ collision = function() {
 	
 	//tile3 = object_index == oPlayer and meetingDreamblock(pos.x, pos.y)
 	
-	ycol = function() {
-		xx = pos.x
-		yy = pos.y
+	var ycol = function() {
+		var xx = pos.x
+		var yy = pos.y
 		repeat(abs(spd.y) div clip_width) {
 			yy += clip_width * sign(spd.y)
 			if meetingGround(xx, yy)
